@@ -2,6 +2,7 @@ import '../css/style.css'
 import javascriptLogo from '../img/javascript.svg'
 import viteLogo from '../img/vite.svg'
 import { setupCounter } from './counter.js'
+import { getCEPData } from './fetchCep.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -15,10 +16,11 @@ document.querySelector('#app').innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+    <h2 id="cep">-</h2>
+    
   </div>
 `
 
 setupCounter(document.querySelector('#counter'))
+
+getCEPData(document.querySelector('#cep'))
