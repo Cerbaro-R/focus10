@@ -11,5 +11,10 @@ document.querySelector('#app').innerHTML = `
     <h2 id="cep">-</h2>
   </div>
 `
+document.getElementById('cep_get').addEventListener('click', function() {
+  const cep = document.getElementById('cep_field').value;
 
-getCEPData(document.querySelector('#cep'))
+  getCEPData(cep, document.querySelector('#cep'))
+});
+
+

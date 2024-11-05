@@ -1,8 +1,10 @@
-const url = "https://viacep.com.br/ws/89801112/json/";
+export async function getCEPData(cep, element) {
 
-export async function getCEPData(element) {
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
+
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
+
     try {
         fetch(url, {
             headers: headers
