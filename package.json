@@ -1,7 +1,7 @@
 {
   "name": "focus10",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
   }
 }
