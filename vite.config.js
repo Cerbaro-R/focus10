@@ -1,6 +1,6 @@
 export default{
     root: 'src', 
-    base: '/focus10',
+    base: '/focus10/',
     build: {
         outDir: '../dist'
     
