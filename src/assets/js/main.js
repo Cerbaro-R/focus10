@@ -1,5 +1,5 @@
 import '../css/style.css'
-import { getCEPData} from "./fetchCEP.js";
+import { getCEPData} from "./fetchCep.js";
 
 document.querySelector('#app').innerHTML = `
   <div>
